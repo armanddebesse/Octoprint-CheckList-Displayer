@@ -38,7 +38,7 @@ jobs:
 
     - name: Get the version
       id: get_version
-      run: echo echo "VERSION=$(python setup.py --version | tail -n 1)" >> $GITHUB_OUTPUT
+      run: echo "VERSION=$(python setup.py --version | tail -n 1)" >> $GITHUB_OUTPUT
 
     - name: Create Release
       id: create_release
@@ -46,8 +46,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: v${{ steps.get_version.outputs.VERSION }}
-        release_name: Release ${{ steps.get_version.outputs.VERSION }}
+        tag_name: v$(GITHUB_OUTPUT.VERSION}
+        release_name: Release $(GITHUB_OUTPUT.VERSION}
         draft: false
         prerelease: false
 
