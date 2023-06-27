@@ -32,13 +32,17 @@ jobs:
         python -m pip install --upgrade pip
         pip install .
 
+    - name: Get the version
+      id: get_version
+      run: echo "VERSION=$(python setup.py --version | tail -n 1)" >> $GITHUB_OUTPUT
+
     - name: Package Plugin
       run: |
         python setup.py sdist
 
-    - name: Get the version
-      id: get_version
-      run: echo "VERSION=$(python setup.py --version | tail -n 1)" >> $GITHUB_OUTPUT
+    - name: Rename Package
+      run: |
+        mv ./dist/$(ls -1 ./dist | head -n 1) ./dist/${{ steps.get_version.outputs.VERSION }}.tar.gz
 
     - name: Create Release
       id: create_release
