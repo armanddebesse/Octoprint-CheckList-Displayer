@@ -38,7 +38,8 @@ jobs:
 
     - name: Get the version
       id: get_version
-      run: echo ::set-output name=VERSION::$(python setup.py --version)
+      # run: echo ::set-output name=VERSION::$(python setup.py --version)
+      run: echo "{VERSION}={$(python setup.py --version)}" >> $GITHUB_OUTPUT
 
     - name: Create Release
       id: create_release
