@@ -1,6 +1,6 @@
 # ConfirmBeforePrintPlugin for OctoPrint
 
-This is a plugin for OctoPrint that adds a feature to show a checklist that the user must accept before they can print. The print operation will be canceled and the checklist will be shown whenever a print job is started, but only for non-local users.
+This is a plugin for OctoPrint that adds a feature to show a checklist that the user must accept before they can print. The print operation will be canceled and the checklist will be shown whenever a print job is started.
 
 ## Requirements
 
