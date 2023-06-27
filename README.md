@@ -33,7 +33,7 @@ Once the plugin has been installed, it should work automatically. Whenever a pri
 
 To test the plugin:
 
-1. Start a print job as a non-local user.
+1. Start a print job.
 2. The print job should be immediately canceled and a checklist should appear.
 3. Accept the checklist.
 4. The print job should restart.
