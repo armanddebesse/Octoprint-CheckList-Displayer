@@ -9,7 +9,11 @@ This is a plugin for OctoPrint that adds a feature to show a checklist that the 
 
 ## Installation
 
-To install this plugin, follow these steps:
+There are two ways to install this plugin:
+
+### Method 1: Manual Installation
+
+Follow these steps:
 
 1. Clone this repository or download the ZIP file and extract it.
 2. Navigate to the plugin directory in the terminal.
@@ -24,6 +28,15 @@ To install this plugin, follow these steps:
 4. Now, go to your OctoPrint interface. Click the wrench icon in the top right to open the settings, and then navigate to the Plugin Manager.
 5. In the Plugin Manager, click on the "Get More..." button, then click on "From File". Navigate to your .tar.gz file and install it.
 6. After the plugin has been installed, restart your OctoPrint instance. The new plugin should now be active.
+
+### Method 2: Installation from the latest GitHub release
+
+1. Navigate to the [releases page](https://github.com/armanddebesse/Octoprint-CheckList-Displayer/releases) of this repository.
+2. Download the latest release named `OctoprintCheckListDisplayer-{VERSION}.tar.gz`.
+3. Now, go to your OctoPrint interface. Click the wrench icon in the top right to open the settings, and then navigate to the Plugin Manager.
+4. In the Plugin Manager, click on the "Get More..." button, then click on "From File". Navigate to your downloaded .tar.gz file and install it.
+5. After the plugin has been installed, restart your OctoPrint instance. The new plugin should now be active.
+
 
 ## Usage
 
